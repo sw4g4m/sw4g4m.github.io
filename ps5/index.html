@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Fight Club PS Store</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#07090f;color:#fff;font-family:Tahoma,Arial,sans-serif}
+body{padding:34px 5%;background:radial-gradient(ellipse at 12% 0%,#0b2249 0%,transparent 48%),radial-gradient(ellipse at 98% 10%,#300e1b 0%,transparent 42%),#07090f}
+.wrap{max-width:1360px;min-height:calc(100vh - 68px);margin:auto;display:flex;flex-direction:column}
+header{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:14px 0 28px;border-bottom:1px solid #354158}
+h1{direction:ltr;text-align:left;font-family:'Trebuchet MS','Arial Black',Arial,sans-serif;font-size:42px;font-weight:900;letter-spacing:1.2px;margin:0;line-height:1.25;color:#fff;text-shadow:0 0 28px #347eff55}
+h1{background:linear-gradient(105deg,#fff 0%,#fff 35%,#8dbdff 72%,#ff5972 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h1:after{content:'';display:block;height:3px;width:85px;margin-top:15px;background:linear-gradient(90deg,#438dff 0%,#438dff 46%,#fff 46%,#fff 54%,#ff425e 54%);border-radius:3px;box-shadow:0 0 14px #397cfb55}
+.contact{text-align:right;line-height:1.9;color:#e0e7f4;font-size:19px}
+#office-address{display:block}
+#office-phone{display:block;direction:ltr;color:#7eb2ff;font-family:Arial,sans-serif;font-size:27px;font-weight:700;letter-spacing:2px;text-shadow:0 0 20px #337dff44}
+#qr-card{flex:0 0 auto;padding:10px;background:#fff;border-radius:12px;box-shadow:0 0 0 1px #83adff44,0 0 24px #347bff25}
+#qr-window{position:relative;width:180px;height:180px;overflow:hidden;background:#fff}
+#office-qr{position:absolute;display:block;width:129.375%;max-width:none;height:160%;left:-14.6875%;top:-21.1458333333%;image-rendering:pixelated}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:38px 0;min-height:170px}
+button{font:inherit;cursor:pointer;border:1px solid #3e587e;border-radius:9px;color:#fff;background:#101e33;transition:background-color .15s,border-color .15s}
+button:hover:not(:disabled){background:#1b3b66;border-color:#88baff}
+button:focus{outline:3px solid #fff;outline-offset:5px;box-shadow:0 0 22px #337dff77}
+button:disabled{opacity:.48;cursor:default}
+#run-sequence{width:100%;max-width:390px;min-height:68px;padding:16px 24px;background:linear-gradient(110deg,#1765d9,#2e83f0);border-color:#7db5ff;border-left:3px solid #ff4761;color:#fff;font-size:23px;font-weight:700;box-shadow:0 0 30px #226de34d,0 8px 24px #0008}
+#run-sequence:hover:not(:disabled){background:linear-gradient(110deg,#2678f1,#4096ff)}
+#run-sequence:disabled{opacity:1;background:#162b4c;border-color:#42628d;border-left-color:#c23d56;color:#c3d7f5;box-shadow:0 0 24px #226de326}
+.events{background:#090e18;border:1px solid #354d70;border-top:2px solid #3d87f6;border-radius:11px;padding:16px;margin:0 0 24px;box-shadow:0 0 20px #2676e516}
+#console{height:205px;overflow:auto;direction:ltr;text-align:left;font:14px/1.8 Consolas,'Courier New',monospace;color:#d4e4ff;white-space:pre-wrap;overflow-wrap:anywhere;scrollbar-color:#375a8c #090e18}
+.payloads{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding-top:22px;border-top:1px solid #354158}
+.payloads button{min-height:59px;padding:13px 10px;font-family:Arial,Tahoma,sans-serif;font-size:16px;font-weight:600;text-align:center;border-bottom:2px solid #397cdd;background:linear-gradient(150deg,#162338,#0c1422)}
+.payloads button:nth-child(even){border-bottom-color:#e84863}
+.payloads button:hover:not(:disabled){background:#1d3557}
+.payload-name{display:block;direction:ltr;overflow-wrap:anywhere}
+#error{margin:0 0 18px;padding:12px 16px;border:1px solid #e54b68;border-radius:8px;background:#30131d;color:#ffdce3;direction:ltr;text-align:left;font-size:14px;overflow-wrap:anywhere}
+[hidden]{display:none!important}
+@media(min-width:1600px){h1{font-size:48px}#console{height:230px}.payloads button{min-height:65px;font-size:18px}}
+@media(max-width:850px){body{padding:24px 5%}.wrap{min-height:calc(100vh - 48px)}header{flex-wrap:wrap}h1{font-size:32px}.contact{font-size:17px}#office-phone{font-size:23px}.payloads{grid-template-columns:repeat(2,minmax(0,1fr))}#qr-window{width:135px;height:135px}#console{height:190px;font-size:13px}}
+@media(max-width:520px){header{justify-content:center;text-align:center;gap:18px}h1{text-align:center;font-size:29px}h1{background:linear-gradient(105deg,#fff 0%,#fff 35%,#8dbdff 72%,#ff5972 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h1:after{margin-left:auto;margin-right:auto}.contact{text-align:center}main{padding:30px 0;min-height:140px}#run-sequence{max-width:310px;min-height:62px;font-size:20px}.payloads{gap:10px}.payloads button{font-size:14px;min-height:56px}.events{padding:12px}#console{font-size:12px}}
+</style>
+</head>
+<body><div class="wrap">
+<header><h1 id="office-name">Fight Club PS Store</h1><div class="contact"><span id="office-address">بلبيس - حي الزهور</span><span id="office-phone">01015505669</span></div><aside id="qr-card"><div id="qr-window"><img id="office-qr" src="./assets/fightclub-qr.jpg" alt="كود QR الخاص بالمكتب" width="1242" height="1536"></div></aside></header>
+<main><button id="run-sequence" disabled>اضغط لتشغيل الالعاب</button></main>
+<div id="error" role="alert" hidden></div>
+<section class="events" aria-label="أحداث التشغيل"><div id="console" role="log" aria-label="أحداث التشغيل"></div></section>
+<nav class="payloads" aria-label="البايلودات">
+<button data-payload="ftpsrv-ps5-install.elf" disabled><span class="payload-name">FTP Server</span><span class="payload-state" hidden></span></button>
+<button data-payload="nanodns.elf" disabled><span class="payload-name">NanoDNS</span><span class="payload-state" hidden></span></button>
+<button data-payload="web-file-mgr-v1.12.elf" disabled><span class="payload-name">Web File Manager</span><span class="payload-state" hidden></span></button>
+<button data-payload="PoorDS4.elf" disabled><span class="payload-name">PoorDS4 · Start</span><span class="payload-state" hidden></span></button>
+<button data-payload="PoorDS4-status.elf" disabled><span class="payload-name">PoorDS4 · Status</span><span class="payload-state" hidden></span></button>
+<button data-payload="PoorDS4-stop.elf" disabled><span class="payload-name">PoorDS4 · Stop</span><span class="payload-state" hidden></span></button>
+<button data-payload="webkit-autoloader-installer_v0.6.1.elf" disabled><span class="payload-name">WebKit Autoloader</span><span class="payload-state" hidden></span></button>
+</nav>
+<div hidden aria-hidden="true"><span id="status"></span><span id="status-detail"></span><span id="step-0"></span><span id="step-1"></span><span id="step-2"></span></div>
+</div>
+<script src="./src/office-config.js"></script>
+<script src="./src/office-ui.js"></script>
+<script src="./src/firmware.js"></script>
+<script src="./src/main.js"></script>
+<script src="./src/rop.js"></script>
+<script src="./src/utils/syscalls.js"></script>
+<script type="module" src="./src/site.js"></script>
+</body></html>
